@@ -33,13 +33,24 @@
     </div>
     <div class="container body-content">
         @RenderBody()
+
+    </div>
+    <div class="container body-content">
+        <br />
         <hr />
+
         <footer>
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
+    @Scripts.Render("~/bundles/google-maps")
     @Scripts.Render("~/bundles/masonry-init")    
     @Scripts.Render("~/bundles/bootstrap")    
     @RenderSection("scripts", required: false)
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS9EtyHVGuBMfo15ofBmgNCSIWpnkvi_U&callback=initMap">
+    </script>
+
 </body>
 </html>

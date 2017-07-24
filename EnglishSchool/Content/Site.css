@@ -21,7 +21,8 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 66%;
+    margin:3px;
 }
 
 .center {
@@ -75,3 +76,8 @@ textarea {
     .grid-item.is-expanded .grid-item-content {
         background: #F90;
     }
+
+#map {
+    height: 400px;
+    width: 100%;
+}
