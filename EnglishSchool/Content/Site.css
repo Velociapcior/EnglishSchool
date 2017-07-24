@@ -24,26 +24,33 @@ textarea {
     max-width: 280px;
 }
 
-.grid {
-    background: #EEE;
-    max-width: 66%;
+.center {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-.grid-item {
-    float: left;
+.grid {
+    background: #EEE;
+    max-width: 66%
 }
 
 /* item is invisible, but used for layout */
 .grid-item,
-.grid-item-content {
-    width: 300px;
+.grid-sizer {
+    width: 50%;
+}
+
+.grid-item {
+    float: left;
     height: 300px;
 }
 
 /* grid-item-content is visible, and transitions size */
 .grid-item-content {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background: #D26;
     border: 2px solid #333;
     border-color: hsla(0, 0%, 0%, 0.5);
@@ -59,13 +66,9 @@ textarea {
 }
 
 /* both item and item content change size */
-.grid-item.is-expanded,
-.grid-item.is-expanded .grid-item-content {
-    width: 500px;
-    height: 500px;
-}
-
 .grid-item.is-expanded {
+    width: 100%;
+    height: 500px;
     z-index: 2;
 }
 
