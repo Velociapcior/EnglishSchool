@@ -22,7 +22,7 @@ input,
 select,
 textarea {
     max-width: 66%;
-    margin:3px;
+    margin:1px;
 }
 
 .center {
