@@ -1,29 +1,40 @@
 ﻿using Castle.Windsor;
 using Castle.Windsor.Installer;
-using EnglishSchool.Installers;
+using EnglishSchool.DependencyInjection;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
 namespace EnglishSchool
 {
-    public class MvcApplication : System.Web.HttpApplication
+  public class MvcApplication : System.Web.HttpApplication
+  {
+    private static IWindsorContainer container;
+
+    protected void Application_Start()
     {
-        private static IWindsorContainer container;
+      AreaRegistration.RegisterAllAreas();
+      FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+      RouteConfig.RegisterRoutes(RouteTable.Routes);
+      BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-        protected void Application_Start()
-        {
-            AreaRegistration.RegisterAllAreas();
-            FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            IocContainer.Setup();
-        }
-
-        protected void Application_End()
-        {
-            container.Dispose();
-        }
+      WindsorControllerFactory windsorControllerFactory = CreateWindsorControllerFactory();
+      ControllerBuilder.Current.SetControllerFactory(windsorControllerFactory);
     }
+
+    protected void Application_End()
+    {
+      container.Dispose();
+    }
+
+    private WindsorControllerFactory CreateWindsorControllerFactory()
+    {
+      WindsorContainer container = new WindsorContainer();
+      container.Install(FromAssembly.This());
+
+      WindsorControllerFactory result = new WindsorControllerFactory(container);
+
+      return result;
+    }
+  }
 }
