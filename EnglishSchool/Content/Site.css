@@ -22,7 +22,7 @@ input,
 select,
 textarea {
     max-width: 66%;
-    margin:1px;
+    margin: 3px;
 }
 
 .center {
@@ -52,12 +52,14 @@ textarea {
 .grid-item-content {
     width: 100%;
     height: 100%;
-    background: #D26;
     border: 2px solid #333;
     border-color: hsla(0, 0%, 0%, 0.5);
     border-radius: 5px;
     -webkit-transition: width 0.4s, height 0.4s;
     transition: width 0.4s, height 0.4s;
+    -webkit-box-shadow: inset -200px -200px 164px -193px rgba(0,0,0,0.55);
+    -moz-box-shadow: inset -200px -200px 164px -193px rgba(0,0,0,0.55);
+    box-shadow: inset -200px -200px 164px -193px rgba(0,0,0,0.55);
 }
 
 .grid-item:hover .grid-item-content {
@@ -82,20 +84,40 @@ textarea {
     width: 100%;
 }
 
-
-#spring{
-
+body {
+    margin: 30px;
 }
 
-#summer{
-
+.submit {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
 }
 
-#autumn
-{
+    .submit input {
+        min-width: 100px;
+    }
 
+
+    .submit .fa-share {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+
+#spring {
+    background-color: #60B24C;
+}
+
+#summer {
+    background-color: #FFBC00;
+}
+
+#autumn {
+    background-color: #994124;
 }
 
 #winter {
-
+    background-color: #5F9ACE;
 }

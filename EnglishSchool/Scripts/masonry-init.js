@@ -2,7 +2,7 @@
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
   columnWidth: '.grid-sizer',
-  percentPosition: true
+  percentPosition: true,
 });
 
 $grid.on( 'click', '.grid-item-content', function(event) {
