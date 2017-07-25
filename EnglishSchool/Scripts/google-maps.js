@@ -13,8 +13,8 @@
         '<address>' +
         'Kozanowska 89/15<br/>'+
         '54-152 Wrocław<br/>'+
-        '<abbr title="Phone">P:</abbr>'+
-        '+48 695366430'+
+        '<i class="fa fa-phone" aria-hidden="true"></i>:'+
+        '&nbsp+48 695366430'+
         '</address>' +
         '</div>' +
         '</div>';
