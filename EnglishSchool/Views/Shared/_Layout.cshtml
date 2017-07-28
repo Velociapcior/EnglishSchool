@@ -7,45 +7,47 @@
     @Scripts.Render("~/bundles/jquery")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/bundles/masonry")   
+    @Scripts.Render("~/bundles/masonry")
+    @Scripts.Render("~/bundles/mdl")
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css">
+
 </head>
-<body>
-    
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class=".demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--scroll">
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row ">
+                <h3>Language Garden</h3>
             </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+            </div>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+                <a href="@Url.Action("Index")" class="mdl-layout__tab">Home</a>
+                <a href="#features" class="mdl-layout__tab">Features</a>
+                <a href="#features" class="mdl-layout__tab">Details</a>
+                <a href="@Url.Action("Contact")" class="mdl-layout__tab">Contact</a>
+                <a href="#features" class="mdl-layout__tab">FAQ</a>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
         </div>
+        <main class="mdl-layout__content">
+            @RenderBody()
+        </main>
     </div>
-    <div class="container body-content">
-        @RenderBody()
 
-    </div>
-    <div class="container body-content">
-        <br />
-        <hr />
-
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
     @Scripts.Render("~/bundles/google-maps")
-    @Scripts.Render("~/bundles/masonry-init")    
-    @Scripts.Render("~/bundles/bootstrap")    
+    @Scripts.Render("~/bundles/masonry-init")
     @RenderSection("scripts", required: false)
 
     <script async defer
@@ -54,3 +56,4 @@
 
 </body>
 </html>
+

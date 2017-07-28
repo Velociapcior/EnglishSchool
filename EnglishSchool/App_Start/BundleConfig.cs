@@ -23,18 +23,17 @@ namespace EnglishSchool
             bundles.Add(new ScriptBundle("~/bundles/google-maps").Include(
                         "~/Scripts/google-maps.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/mdl").Include(
+                        "~/Content/mdl/material.js"));
+
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                   "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
-
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/mdl/material.css"));
         }
     }
 }

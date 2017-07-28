@@ -22,11 +22,6 @@ namespace EnglishSchool
       ControllerBuilder.Current.SetControllerFactory(windsorControllerFactory);
     }
 
-    protected void Application_End()
-    {
-      container.Dispose();
-    }
-
     private WindsorControllerFactory CreateWindsorControllerFactory()
     {
       WindsorContainer container = new WindsorContainer();

@@ -1,31 +1,4 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
-    margin: 15px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 66%;
-    margin: 3px;
-}
-
-.center {
+﻿.center {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -94,16 +67,16 @@ body {
     font-size: 16px;
 }
 
-.submit input {
-    min-width: 115px;
-}
+    .submit input {
+        min-width: 115px;
+    }
 
 
-.submit .fa-share {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
+    .submit .fa-share {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
 
 
 #spring {
@@ -120,4 +93,78 @@ body {
 
 #winter {
     background-color: #5F9ACE;
+}
+
+.demo-layout-transparent {
+    background-image: url('../Assests/garden.jpg') center / cover;
+}
+
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+        /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+        color: white;
+    }
+
+body {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mdl-demo .mdl-layout__header-row {
+    padding-left: 40px;
+}
+
+.mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
+    font-size: inherit;
+}
+
+.mdl-demo .mdl-layout__tab-bar-button {
+    display: none;
+}
+
+.mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
+    display: none;
+}
+
+.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
+.mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
+    overflow: visible;
+}
+
+.mdl-demo .mdl-layout__tab-bar-container {
+    height: 64px;
+}
+
+.mdl-demo .mdl-layout__tab-bar {
+    padding: 0;
+    padding-left: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
+height: 64px;
+line-height: 64px;
+}
+
+.mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
+    background-color: white;
+    height: 4px;
+}
+
+.section--center {
+    margin: 0 auto;
+    max-width: 66%;
+    text-align: left;
+}
+
+.address-font {
+    font-size: 1.2em;    
+}
+
+.contact-text{
+    background: #ebebeb;
 }

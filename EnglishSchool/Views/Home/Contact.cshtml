@@ -3,66 +3,66 @@
 @{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-<row class="container">
-    <div class="col-md-6">
+<section class="mdl-grid section--center">
+    <h2 class="mdl-cell mdl-cell--12-col">@ViewBag.Title.</h2><br />
+    <h3 class="mdl-cell mdl-cell--12-col">@ViewBag.Message</h3>
+</section>
+<section class="mdl-grid section--center">
+    <div class="mdl-cell mdl-cell--6-col">
         <br />
-        <i class="fa fa-address-card-o" aria-hidden="true"></i> Address:
-        <address>
+        <address class="address-font">
+            <h4><i class="fa fa-address-card-o" aria-hidden="true"></i> Address:<br /></h4>
             &nbsp;Kozanowska 89/15<br />
             &nbsp;54-152 Wrocław<br />
             &nbsp;<i class="fa fa-phone" aria-hidden="true"></i>:
             &nbsp; +48 695366430
         </address>
 
-        <address>
+        <address class="address-font">
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-<strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-<strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
         </address>
+
+        @using (Html.BeginForm())
+            {
+            @Html.AntiForgeryToken()
+            <h4>Send your comments.</h4>
+            <hr />
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label contact-text">
+                @Html.TextBoxFor(m => m.FromName, new { @class = "mdl-textfield__input contact-text" })
+                @Html.LabelFor(m => m.FromName, new { @class = "mdl-textfield__label" })
+                <hr />
+                @Html.ValidationMessageFor(m => m.FromName)
+            </div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label  contact-text">
+                @Html.TextBoxFor(m => m.FromEmail, new { @class = "mdl-textfield__input contact-text" })
+                @Html.LabelFor(m => m.FromEmail, new { @class = "mdl-textfield__label" })
+                <hr />
+                @Html.ValidationMessageFor(m => m.FromEmail)
+            </div>
+            <div class="mdl-textfield mdl-js-textfield contact-text">
+                @Html.TextAreaFor(m => m.Message, new { @class = "mdl-textfield__input contact-text", @rows = "8", @maxrows = "12", @type= "text" })
+                @Html.LabelFor(m => m.Message, new { @class = "mdl-textfield__label" })
+                <hr />
+                @Html.ValidationMessageFor(m => m.Message)
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <div class="submit">
+                        <span class="fa fa-share"></span>
+                        <input type="submit" class="btn btn-info" value="Send" />
+                    </div>
+                </div>
+            </div>
+        }
+
     </div>
-    <div class="col-md-6">
+    <div class="mdl-cell mdl-cell--6-col">
         <h4>Mapa dojazdu</h4>
         <div id="map"></div>
     </div>
-</row>
+</section>
 
-<row class="container">
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
-        <h4>Send your comments.</h4>
-        <hr />
-        <div class="form-group">
-            @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.FromName, new { @class = "col-md-8 form-control" })
-                @Html.ValidationMessageFor(m => m.FromName)
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.FromEmail, new { @class = "col-md-8 form-control" })
-                @Html.ValidationMessageFor(m => m.FromEmail)
-            </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Message, new { @class = "col-md-2 control-label" })
-            <div class="col-md-10">
-                @Html.TextAreaFor(m => m.Message, new { @class = "col-md-8 form-control" })
-                @Html.ValidationMessageFor(m => m.Message)
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <div class="submit">
-                    <span class="fa fa-share"></span>
-                    <input type="submit" class="btn btn-info" value="Send" />
-                </div>
-            </div>
-        </div>
-    }
-</row>
+<section class="mdl-grid section--center" "></section>
