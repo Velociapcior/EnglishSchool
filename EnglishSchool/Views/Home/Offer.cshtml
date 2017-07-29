@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Offer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="section--center">
+    <h1>Oferta</h1>
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-tabs__tab-bar">
+            <a href="#kids-panel" class="mdl-tabs__tab is-active">Kursy dla dzieci ()</a>
+            <a href="#members-panel" class="mdl-tabs__tab">Members</a>
+            <a href="#albums-panel" class="mdl-tabs__tab">Discography</a>
+        </div>
+        <div class="mdl-tabs__panel is-active" id="kids-panel">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <img src="~/Assests/kids-panel.jpg" class="img-offer" />
+                </div>
+                <div class="mdl-cell mdl-cell--8-col">
+                    <h4><strong>Zajęcia prowadzone są w grupach maksymalnie do 6 osób.</strong></h4>
+                    <h5>Oferta dla dzieci z klas I-IV</h5>
+                    <ul class="mdl-list">
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Opis zajęć</span>
+                                <span class="mdl-list__item-text-body">
+                                    Wprowadzenie zawartości leksykalno-gramatycznej odbywa się głównie za pomocą
+                                    materiałów wizualnych (karty, mapy, prezentacje, rysunki, przedmioty i wiele innych) oraz
+                                    poprzez gry i zabawy.
+                                </span>
+                            </span>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Program nauczania</span>
+                                <span class="mdl-list__item-text-body">
+                                    W zależności od potrzeb grupy zajęcia mogą być
+                                    oparte na podręczniku szkolnym lub podręczniku zaproponowanym przez szkołę językową.
+                                    Dokładamy wszelkich starań, aby dostosować program nauczania również do uczniów, którzy doświadczają trudności w przyswajaniu materiału
+                                    edukacyjnego. 
+                                </span>
+                            </span>
+                        </li>                        
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <span class="mdl-list__item-primary-content">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <span>Szansa dla wszystkich</span>
+                                <span class="mdl-list__item-text-body">
+                                    Stawiamy przede wszystkim na ścisłą współpracę z rodzicami, po to, aby
+                                    proces nauczania był najbardziej efektywny.
+                                </span>
+                            </span>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mdl-tabs__panel" id="members-panel">
+            <p>The Beatles' members were:</p>
+            <ul>
+                <li>John Lennon (1940-1980)</li>
+                <li>Paul McCartney (1942-)</li>
+                <li>George Harrison (1943-2001)</li>
+                <li>Ringo Starr (1940-)</li>
+            </ul>
+        </div>
+        <div class="mdl-tabs__panel" id="albums-panel">
+            <p>The Beatles' original UK LPs, in order of release:</p>
+            <ol>
+                <li>Please Please Me (1963)</li>
+                <li>With the Beatles (1963)</li>
+                <li>A Hard Day's Night (1964)</li>
+                <li>Beatles for Sale (1964)</li>
+                <li>Help! (1965)</li>
+                <li>Rubber Soul (1965)</li>
+                <li>Revolver (1966)</li>
+                <li>Sgt. Pepper's Lonely Hearts Club Band (1967)</li>
+                <li>The Beatles ("The White Album", 1968)</li>
+                <li>Yellow Submarine (1969)</li>
+                <li>Abbey Road (1969)</li>
+                <li>Let It Be (1970)</li>
+            </ol>
+        </div>
+    </div>
+</section>

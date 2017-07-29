@@ -168,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assests\garden.jpg" />
+    <Content Include="Assests\kids-panel.jpg" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
@@ -224,6 +225,7 @@
     <Content Include="Content\mdl\material.min.js.map" />
     <Content Include="Content\mdl\package.json" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\EventListeners.js" />
     <Content Include="Scripts\google-maps.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -255,6 +257,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Offer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -17,30 +17,18 @@
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class=".demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--scroll">
-            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-            </div>
             <div class="mdl-layout--large-screen-only mdl-layout__header-row ">
                 <h3>Language Garden</h3>
             </div>
             <div class="mdl-layout--large-screen-only mdl-layout__header-row">
             </div>
             <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-                <a href="@Url.Action("Index")" class="mdl-layout__tab">Home</a>
-                <a href="#features" class="mdl-layout__tab">Features</a>
-                <a href="#features" class="mdl-layout__tab">Details</a>
-                <a href="@Url.Action("Contact")" class="mdl-layout__tab">Contact</a>
-                <a href="#features" class="mdl-layout__tab">FAQ</a>
+                <a href="@Url.Action("Index")" class="mdl-layout__tab">O nas</a>
+                <a href="@Url.Action("Offer")" class="mdl-layout__tab">Oferta</a>
+                <a href="#features" class="mdl-layout__tab">Cennik</a>
+                <a href="@Url.Action("Contact")" class="mdl-layout__tab">Kontakt</a>                
             </div>
         </header>
-        <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Title</span>
-            <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-            </nav>
-        </div>
         <main class="mdl-layout__content">
             @RenderBody()
         </main>

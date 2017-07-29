@@ -166,5 +166,9 @@ line-height: 64px;
 }
 
 .contact-text{
-    background: #ebebeb;
+}
+
+.img-offer{
+    max-width: 100%;
+    max-height: 100%;
 }

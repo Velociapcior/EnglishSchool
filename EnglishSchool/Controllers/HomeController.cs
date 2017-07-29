@@ -26,5 +26,10 @@ namespace EnglishSchool.Controllers
 
       return View();
     }
+
+    public ActionResult Offer()
+        {
+            return View();
+        }
   }
 }
