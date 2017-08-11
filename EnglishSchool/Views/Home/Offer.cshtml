@@ -7,8 +7,8 @@
     <h1>Oferta</h1>
     <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
         <div class="mdl-tabs__tab-bar">
-            <a href="#kids-panel" class="mdl-tabs__tab is-active">Kursy dla dzieci ()</a>
-            <a href="#members-panel" class="mdl-tabs__tab">Members</a>
+            <a href="#kids-panel" class="mdl-tabs__tab is-active">Kursy dla dzieci</a>
+            <a href="#youth-panel" class="mdl-tabs__tab">Kursy dla młodzieży</a>
             <a href="#albums-panel" class="mdl-tabs__tab">Discography</a>
         </div>
         <div class="mdl-tabs__panel is-active" id="kids-panel">
@@ -17,12 +17,13 @@
                     <img src="~/Assests/kids-panel.jpg" class="img-offer" />
                 </div>
                 <div class="mdl-cell mdl-cell--8-col">
-                    <h4><strong>Zajęcia prowadzone są w grupach maksymalnie do 6 osób.</strong></h4>
-                    <h5>Oferta dla dzieci z klas I-IV</h5>
+                    <h4 class="mdl-color-text--primary-dark"><strong>Zajęcia prowadzone są w grupach maksymalnie do 6 osób.</strong></h4>
+                    <h5 class="mdl-color-text--primary">Oferta dla dzieci z klas I-IV</h5>
+
                     <ul class="mdl-list">
                         <li class="mdl-list__item mdl-list__item--three-line">
                             <span class="mdl-list__item-primary-content">
-                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <i class="fa fa-check mdl-color-text--accent" aria-hidden="true"></i>
                                 <span>Opis zajęć</span>
                                 <span class="mdl-list__item-text-body">
                                     Wprowadzenie zawartości leksykalno-gramatycznej odbywa się głównie za pomocą
@@ -33,7 +34,7 @@
                         </li>
                         <li class="mdl-list__item mdl-list__item--three-line">
                             <span class="mdl-list__item-primary-content">
-                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <i class="fa fa-check mdl-color-text--accent" aria-hidden="true"></i>
                                 <span>Program nauczania</span>
                                 <span class="mdl-list__item-text-body">
                                     W zależności od potrzeb grupy zajęcia mogą być
@@ -42,10 +43,11 @@
                                     edukacyjnego. 
                                 </span>
                             </span>
-                        </li>                        
+                        </li>        
+       
                         <li class="mdl-list__item mdl-list__item--three-line">
                             <span class="mdl-list__item-primary-content">
-                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <i class="fa fa-check mdl-color-text--accent" aria-hidden="true"></i>
                                 <span>Szansa dla wszystkich</span>
                                 <span class="mdl-list__item-text-body">
                                     Stawiamy przede wszystkim na ścisłą współpracę z rodzicami, po to, aby
@@ -57,14 +59,64 @@
                 </div>
             </div>
         </div>
-        <div class="mdl-tabs__panel" id="members-panel">
-            <p>The Beatles' members were:</p>
-            <ul>
-                <li>John Lennon (1940-1980)</li>
-                <li>Paul McCartney (1942-)</li>
-                <li>George Harrison (1943-2001)</li>
-                <li>Ringo Starr (1940-)</li>
-            </ul>
+        <div class="mdl-tabs__panel" id="youth-panel">
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--4-col">
+                    <img src="~/Assests/youth-panel.jpg" class="img-offer" />
+                </div>
+                <div class="mdl-cell mdl-cell--8-col">
+                    <h4 class="mdl-color-text--primary-dark"><strong>Zajęcia prowadzone są głównie w grupach z parzystą liczbą uczniów, jednak nie więcej niż 6.</strong></h4>
+                    <h5 class="mdl-color-text--primary">Oferta dla dzieci z klas V-VIII szkoły podstawowej oraz szkół ponadgimnazjalnych i średnich</h5>
+                    <ul class="mdl-list">
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <div class="mdl-list__item-primary-content">
+                                <i class="fa fa-check mdl-color-text--accent" aria-hidden="true"></i>
+                                <span>Kursy ogólne:</span>
+                                <div class="mdl-list__item-text-body">
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item ">                                           
+                                            <span class="mdl-list__item-text-body">
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <span><strong>Kursy całoroczne</strong> układane w oparciu o podręcznik dopasowany do poziomu ucznia/grupy</span>
+                                            </span>
+                                        </li>
+                                        <li class="mdl-list__item">                                            
+                                            <span class="mdl-list__item-text-body">
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <span><strong>Żywy język </strong>- na tym etapie nauczania staramy się mówić przeważnie w języku obcym, co doskonale uczy sprawności słuchania ze zrozumieniem, kształtuje wymowę i zachęca do interakcji.</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="mdl-list__item mdl-list__item--three-line">
+                            <div class="mdl-list__item-primary-content">
+                                <i class="fa fa-check mdl-color-text--accent" aria-hidden="true"></i>
+                                <span>Kursy egzaminacyjne:</span>
+                                <div class="mdl-list__item-text-body">
+                                    <ul class="mdl-list">
+                                        <li class="mdl-list__item ">
+                                            <span class="mdl-list__item-text-body">
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <span><strong>gimnazjalny, maturalny</strong></span>
+                                            </span>
+                                        </li>
+                                        <li class="mdl-list__item">
+                                            <span class="mdl-list__item-text-body">
+                                                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                                                <span><strong>Egzaminy</strong> Cambridge English Language Assessment</span><br />
+                                                &emsp;&emsp;KET, PET<br />
+                                                &emsp;&emsp;FCE, CAE, CPE
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="mdl-tabs__panel" id="albums-panel">
             <p>The Beatles' original UK LPs, in order of release:</p>

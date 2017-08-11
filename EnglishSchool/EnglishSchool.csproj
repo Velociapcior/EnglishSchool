@@ -169,6 +169,7 @@
   <ItemGroup>
     <Content Include="Assests\garden.jpg" />
     <Content Include="Assests\kids-panel.jpg" />
+    <Content Include="Assests\youth-panel.jpg" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
