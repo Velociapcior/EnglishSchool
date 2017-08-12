@@ -167,6 +167,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assests\adult-panel.jpg" />
     <Content Include="Assests\garden.jpg" />
     <Content Include="Assests\kids-panel.jpg" />
     <Content Include="Assests\youth-panel.jpg" />
@@ -225,6 +226,7 @@
     <Content Include="Content\mdl\material.min.css.map" />
     <Content Include="Content\mdl\material.min.js.map" />
     <Content Include="Content\mdl\package.json" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\EventListeners.js" />
     <Content Include="Scripts\google-maps.js" />
@@ -259,6 +261,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Offer.cshtml" />
+    <Content Include="Views\Home\PriceList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -31,5 +31,10 @@ namespace EnglishSchool.Controllers
         {
             return View();
         }
+
+    public ActionResult PriceList()
+        {
+            return View();
+        }
   }
 }

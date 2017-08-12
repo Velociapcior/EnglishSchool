@@ -173,4 +173,17 @@ line-height: 64px;
     max-height: 100%;
 }
 
+thead {
+    background: #90B96B;
+}
+
+tbody tr:hover {
+    background: #967baf !important;
+    color: #fff;
+}
+
+table{
+    cursor: default;
+}
+
 
